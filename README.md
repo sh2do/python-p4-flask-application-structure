@@ -4,11 +4,11 @@
 
 - Describe the components of a web application framework.
 - Build and run a Flask application on your computer.
-- Manipulate and test the structure of a request object.
+- Manipulat,e and test the structure of a request object.
 
-***
+---
 
-## Key Vocab
+## Key Vocab ,
 
 - **Web Framework**: software that is designed to support the development of
   web applications. Web frameworks provide built-in tools for generating web
@@ -26,7 +26,7 @@
 - **Template Engine**: software that takes in strings with tokenized
   values, replacing the tokens with their values as output in a web browser.
 
-***
+---
 
 ## Introduction
 
@@ -35,7 +35,7 @@ lesson with your standard "text output in the browser" application, but we'll
 also extend a bit further to explore **routing**, creating Flask development
 servers, and debugging in the browser.
 
-***
+---
 
 ## Initializing an Application
 
@@ -79,7 +79,7 @@ which refers to the name of the current module.
 </details>
 <br/>
 
-***
+---
 
 ## Routing Views
 
@@ -146,8 +146,7 @@ Navigate to your favorite social media site and take a look at the URL. The base
 will represent the index or homepage for the application. Navigate to a user
 profile and take another look at the URL:
 
-![Screenshot of NASA Twitter profile with URL twitter.com/NASA](
-https://curriculum-content.s3.amazonaws.com/python/twitter_nasa_screenshot.png)
+![Screenshot of NASA Twitter profile with URL twitter.com/NASA](https://curriculum-content.s3.amazonaws.com/python/twitter_nasa_screenshot.png)
 
 "twitter.com" is clearly a fixed portion of the URL- it's everywhere! There are
 other pieces, though, that it wouldn't make sense to hard-code into our
@@ -204,7 +203,7 @@ def user(username):
 
 Now we're ready to run our application.
 
-***
+---
 
 ## The Flask Development Web Server
 
@@ -236,18 +235,14 @@ $ flask run
 Navigate to `http://127.0.0.1:5555` and you should see the index for our
 application:
 
-![Webpage that says "Welcome to my page!"](
-https://curriculum-content.s3.amazonaws.com/python/flask-application-structure-1.png
-)
+![Webpage that says "Welcome to my page!"](https://curriculum-content.s3.amazonaws.com/python/flask-application-structure-1.png)
 
 > **NOTE: "localhost" is the plain-English version of 127.0.0.1 on most
 > machines. You will often see the two used interchangeably.**
 
 Add a username to the URL. Now you should see something like this:
 
-![Webpage that says "Profile for Mr-User"](
-https://curriculum-content.s3.amazonaws.com/python/flask-application-structure-2.png
-)
+![Webpage that says "Profile for Mr-User"](https://curriculum-content.s3.amazonaws.com/python/flask-application-structure-2.png)
 
 We can also run a development server through treating our application module as
 a script with the `app.run()` method:
@@ -283,7 +278,7 @@ Running from a script isn't quite as Flasky, but it keeps all of our
 configuration in sight. We also still have access to these Flask tools as
 written, because `flask run` and `flask shell` look for `app.py` by default!
 
-***
+---
 
 ## Conclusion
 
@@ -291,7 +286,7 @@ You've just built your first Flask web application! It's very simple, but you'll
 use the Flask class and its decorator methods many times throughout Phase 4.
 Next, we'll get some more practice with routing and views.
 
-***
+---
 
 ## Solution Code
 
@@ -312,7 +307,7 @@ if __name__ == '__main__':
     app.run(port=5555, debug=True)
 ```
 
-***
+---
 
 ## Resources
 
